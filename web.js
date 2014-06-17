@@ -15,6 +15,10 @@ app.get('/', function(req, res){
   res.sendfile(__dirname + '/index.html');
 });
 
+app.get('/resume', function(req, res){
+  res.sendfile(__dirname + '/resume.pdf');
+});
+
 app.use(bodyParser());
 
 app.use('/js', express.static(__dirname + '/js'))

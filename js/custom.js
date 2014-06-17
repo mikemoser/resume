@@ -72,8 +72,10 @@ $(document).ready(function(e) {
 //var windowBottom = $(window).height();
 var index=0;
 $(document).scroll(function(){
-	var top = $('.technical').height()-$(window).scrollTop();
-	if(top<-50){
+    var scrollTop = $(window).scrollTop();
+	var top = $('.technical').position().top;
+
+	if(top - 62 <= scrollTop){
 		if(index==0){	
 			
 			$('.chart').easyPieChart({

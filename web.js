@@ -15,8 +15,8 @@ app.get('/', function(req, res){
   res.sendfile(__dirname + '/index.html');
 });
 
-app.get('/resume', function(req, res){
-  res.sendfile(__dirname + '/resume.pdf');
+app.get('/mike-moser-resume', function(req, res){
+  res.sendfile(__dirname + '/mike-moser-resume.pdf');
 });
 
 app.use(bodyParser());
